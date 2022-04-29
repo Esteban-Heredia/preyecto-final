@@ -549,6 +549,7 @@ footer {
 
     .titulo-primario { 
         font-size: 35px;
+        animation: titulo-primario-ani 1s both;
     }
 
     .imagen-principal {
@@ -601,6 +602,11 @@ footer {
 
     h3 { 
         font-size: 25px;
+    }
+
+    .cursos-principal {
+        column-gap: 45px;
+        margin: 30px;
     }
 
     .texto-cursos1, .texto-cursos2, .texto-cursos3 {
@@ -722,6 +728,11 @@ footer {
         font-size: 40px;
     }
 
+    .cursos-principal {
+        column-gap: 80px;
+        margin: 20px;
+    }    
+
     .texto-cursos1, .texto-cursos2, .texto-cursos3 {
         font-size: 30px;
     }
@@ -818,3 +829,17 @@ footer {
       opacity: 1;
     }
   }
+
+  @keyframes titulo-primario-ani {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
