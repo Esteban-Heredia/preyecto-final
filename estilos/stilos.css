@@ -554,6 +554,7 @@ footer {
     .imagen-principal {
         width: 40%;
         margin-top: 30px;
+        animation: sombra-img 0.8s both;
     }
 
     /* fin home laptop */
@@ -658,6 +659,7 @@ footer {
         width: 35%;
     }
 
+    /* fin home desktop */
 
     /* media desktop */
 
@@ -779,3 +781,16 @@ footer {
 
     /* fin footer desktop */
 }
+
+/* aca arranca animaciones */
+
+@keyframes sombra-img {
+    0% {
+      transform: translateZ(0);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      transform: translateZ(50px);
+      box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.55), 0 12px 20px -12px rgba(0, 0, 0, 0.55);
+    }
+  }
