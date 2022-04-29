@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- estilos css -->
+    <link rel="stylesheet" href="../estilos/stilos.css">
+
+    <!-- tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- icono  -->
+    <link rel="icon" href="../iconos/logo-pestaña.png">
+
+    <!-- titulo -->
+    <title>CMS Psicologia</title>
+</head>
+<body>
+    <header>
+        <img class="logo-base" src="../iconos/logo-base-horizontal.png" alt="logo CMS psicologia">
+        <nav>
+            <ul class="lista-nav">
+                <li>
+                    <a class="link-nav" href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a class="link-nav" href="orientacion.html">Orientación</a>
+                </li>
+                <li>
+                    <a class="link-nav" href="ubicacion.html">Ubicación</a>
+                </li>
+                <li>
+                    <a class="link-nav" href="cursos.html">Cursos</a>
+                </li>
+                <li>
+                    <a class="link-nav" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sec-primera">
+            <h1>
+                ¿Querés contactarte con nosotras?
+            </h1>
+            <div>
+                <p class="texto-secundario" >Para poder brindarte el mejor servicio y ver qué profesional se adecua más a tus necesidades, por favor completá el siguiente formulario: </p>
+            </div>
+        </section>
+
+        <section class="form-gral">
+            <form action="">
+                <div class="form-primero">
+                        <label for="nombre">Por favor ingresá tu:</label>
+                        <input type="text" placeholder="Nombre">
+                        <br>
+                        <label for="apellido">Por favor ingresá tu:</label>
+                        <input type="text" placeholder="Apellido">
+                        <br>
+                        <label for="apellido">Por favor ingresá tu:</label>
+                        <input type="text" placeholder="Localidad">
+                        <br>
+                        <label for="email">Por favor ingresá tu:</label>
+                        <input type="email" placeholder="Email">
+                        <br>
+                        <label for="telefono">Por favor ingresá tu:</label>
+                        <input type="tel" placeholder="Teléfono">
+                        <p class="texto-form">Poseés obra social?</p>
+                        <label for="">Si</label>
+                        <input type="checkbox">
+                        <label for="">No</label>
+                        <input type="checkbox">
+                    </div>
+                    <!-- uso checkbox porque en radio nose como hacer para que se desmarque despues o solo marque uno solo -->
+                    <div class="form-segundo">
+                        <label for="">Por favor ingresa cuál:</label>
+                        <input type="text" placeholder="Obra social">
+                        <br>
+                        <p class="texto-form">Alguna vez realizaste terapia?</p>
+                        <label for="">Si</label>
+                        <input type="checkbox">
+                        <label for="">No</label>
+                        <input type="checkbox">
+                        <br>
+                        <p class="texto-form">Que tipo de terapia preferís?</p>
+                        <label for="">Virtual</label>
+                        <input type="checkbox">
+                        <label for="">Presencial</label>
+                        <input type="checkbox">
+                        <br>
+                        <label for="asunto">¿Cuál es tu motivo de consulta?</label>
+                        <br>
+                        <textarea name="" id=""></textarea>
+                    </div>
+            </form>
+            <input class="boton" type="submit" value="Enviar">
+        </section>
+    <br>
+        <section class="padre-media">
+            <div class="media">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img class="icono-media" src="../iconos/logotipo-facebook.png" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img class="icono-media" src="../iconos/instagram-logo.png" alt="instagram">
+                </a>
+            </div>
+        </section>
+    </main>
+        
+    <footer>
+        <div>
+            <p class="legales" >
+                legales
+            </p>
+            <p class="legales" >
+                copy
+            </p>
+        </div>
+        <a class="faq" href="secciones/consulta.html">Pregunta frecuentes</a>
+    </footer>
+</body>
+</html>
