@@ -577,12 +577,14 @@ footer {
         width: 27%;
         margin-right: 90px;
         margin-bottom: 30px;
+        animation: entrada-dai 0.5s both;
     }
 
     .psicologas2 {
         width: 27%;
         margin-left: 90px;
         margin-bottom: 60px;
+        animation: entrada-iad 0.5s both;
     }
 
     /* fin orientacion laptop */
@@ -792,5 +794,27 @@ footer {
     100% {
       transform: translateZ(50px);
       box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.55), 0 12px 20px -12px rgba(0, 0, 0, 0.55);
+    }
+  }
+
+  @keyframes entrada-dai {
+    0% {
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes entrada-iad {
+    0% {
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
     }
   }
