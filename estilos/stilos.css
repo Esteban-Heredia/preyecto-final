@@ -249,15 +249,16 @@ table {
 thead {
     background-color: #b2fbee;
     border-radius: 15px;
+    padding: 0px 25px;
 }
 
 th {
     font-family: 'Lato', sans-serif;
-    padding: 10px 0px;
+    padding: 10px 10px;
 }
 
 td {
-    padding: 0px 6px;
+    padding: 0px 18px;
 }
 
 .libre {
@@ -382,6 +383,14 @@ footer {
 }
 
 /* termina footer */
+
+/* bootstrap */
+
+.row {
+    --bs-gutter-x: 0rem;
+}
+
+/* fin bootstrap */
 
 @media screen and (min-width:600px){
 
@@ -748,7 +757,7 @@ footer {
     }
 
     .libre {
-        padding: 0px 89px;
+        padding: 0px 90px 0px 130px;
     }
 
     /* fin cursos desktop */
