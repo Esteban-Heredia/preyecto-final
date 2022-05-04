@@ -69,28 +69,39 @@
                         <br>
                         <label for="telefono">Por favor ingresá tu:</label>
                         <input type="tel" placeholder="Teléfono">
-                        <p class="texto-form">Poseés obra social?</p>
-                        <label for="">Si</label>
-                        <input type="checkbox">
-                        <label for="">No</label>
-                        <input type="checkbox">
+                        <br>
+                        <label for="exampleDataList" class="form-label">Posee obra social?</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="...">
+                        <datalist id="datalistOptions">
+                        <option value="Si">
+                        <option value="No">
+                        </datalist>
                     </div>
-                    <!-- uso checkbox porque en radio nose como hacer para que se desmarque despues o solo marque uno solo -->
+                    
                     <div class="form-segundo">
-                        <label for="">Por favor ingresa cuál:</label>
-                        <input type="text" placeholder="Obra social">
+                        <label for="exampleDataList" class="form-label">Que obra social posee:</label>
+                        <input class="form-control" list="datalistOptions1" id="exampleDataList" placeholder="Obra social">
+                        <datalist id="datalistOptions1">
+                          <option value="Obra social 1">
+                          <option value="Obra social 2">
+                          <option value="Obra social 3">
+                          <option value="Obra social 4">
+                          <option value="Obra social 5">
+                        </datalist>
                         <br>
-                        <p class="texto-form">Alguna vez realizaste terapia?</p>
-                        <label for="">Si</label>
-                        <input type="checkbox">
-                        <label for="">No</label>
-                        <input type="checkbox">
+                        <label for="exampleDataList" class="form-label">Alguna vez realizaste terapia?</label>
+                        <input class="form-control" list="datalistOptions2" id="exampleDataList" placeholder="...">
+                        <datalist id="datalistOptions2">
+                        <option value="Si">
+                        <option value="No">
+                        </datalist>
                         <br>
-                        <p class="texto-form">Que tipo de terapia preferís?</p>
-                        <label for="">Virtual</label>
-                        <input type="checkbox">
-                        <label for="">Presencial</label>
-                        <input type="checkbox">
+                        <label for="exampleDataList" class="form-label">Que tipo de terapia preferís?</label>
+                        <input class="form-control" list="datalistOptions3" id="exampleDataList" placeholder="...">
+                        <datalist id="datalistOptions3">
+                        <option value="virtual">
+                        <option value="Presencial">
+                        </datalist>
                         <br>
                         <label for="asunto">¿Cuál es tu motivo de consulta?</label>
                         <br>
