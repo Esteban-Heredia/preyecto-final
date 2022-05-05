@@ -156,6 +156,10 @@ h1 {
     width: 80%;
 }
 
+h2 {
+    color: #00aacd;
+}
+
 /* aca termina main orientacion */
 
 /* main ubicacion */
@@ -293,12 +297,12 @@ label {
 }
 
 input {
-    background-color: #b2fbee;
-    border-radius: 15px;
-    margin: 10px;
-    padding: 5px;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
+    background-color: #b2fbee !important;
+    border-radius: 15px !important;
+    margin: 10px !important;
+    padding: 5px !important;
+    text-align: center !important;
+    font-family: 'Lato', sans-serif !important;
 }
 
 .texto-form {
@@ -365,6 +369,14 @@ footer {
 
 .row {
     --bs-gutter-x: 0rem;
+}
+
+.form-control {
+    width: 50%;
+}
+
+.form-label {
+    margin-bottom: 0;
 }
 
 /* fin bootstrap */
@@ -739,35 +751,6 @@ footer {
 
     /* fin cursos desktop */
 
-    /* contacto desktop */
-
-    .texto-secundario {
-        font-size: 32px;
-        margin: 15px 135px;
-    }
-
-    label {
-        font-size: 45px;
-    }
-
-    input {
-        font-size: 25px;
-    }
-
-    .texto-form {
-        font-size: 35px;
-    }
-
-    textarea {
-        font-size: 25px;
-    }
-
-    .boton {
-        font-size: 30px;
-    }
-
-    /* fin contacto desktop */
-    
     /* footer desktop */
 
     .legales {
