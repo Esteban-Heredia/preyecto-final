@@ -357,29 +357,6 @@ a {
 footer {
     background: rgb(149,255,239);
     background: linear-gradient(34deg, rgba(149,255,239,1) 0%, rgba(178,251,238,1) 35%, rgba(99,228,255,1) 100%);
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.legales {
-    font-family: 'Lato', sans-serif;
-    font-style: italic;
-    font-size: 17px;
-    color: #363636;
-}
-
-.faq {
-    font-family: 'Lato', sans-serif;
-    font-style: italic;
-    font-size: 17px;
-    color: #363636;
-    text-decoration: none;
-}
-
-.faq:hover {
-    color: #00aacd;
 }
 
 /* termina footer */
