@@ -464,6 +464,14 @@ footer {
     }
 
     /* fin cursos tablet */
+
+    /* bootstrap tablet */
+
+    .w-50 {
+        width: 30%!important;
+    }
+
+    /* fin de bootstrap tablet */
 }
 
 @media screen and (min-width:768px) {
@@ -523,6 +531,18 @@ footer {
     }
 
     /* fin contacto t/h */
+
+    /* bootstrap t/h */
+
+    .row {
+        flex-direction: row;
+    }
+
+    .w-50 {
+        width: 85%!important;
+    }
+
+    /* fin bootstrap t/h */
 }
 
 @media screen and (min-width:1024px) {
@@ -634,6 +654,14 @@ footer {
         margin: 0px 45px;
     }
     /* fin contacto laptop */
+
+        /* bootstrap t/h */
+
+        .w-50 {
+            width: 50%!important;
+        }
+    
+        /* fin bootstrap t/h */
 }
 
 @media screen and (min-width:1440px) {
