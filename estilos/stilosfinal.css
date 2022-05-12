@@ -1,0 +1,64 @@
+header {
+  display: flex;
+  background: #63e4ff linear-gradient(34deg, #63e4ff 0%, #b2fbee 65%, #95ffef 100%);
+  justify-content: space-between;
+  align-items: center; }
+  header nav {
+    display: flex;
+    flex-direction: row; }
+  header .logo-base {
+    height: 22px;
+    margin: 0px 0px 0px 5px; }
+  header .lista-nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 10px 0px;
+    justify-content: center;
+    align-items: center; }
+  header li {
+    color: black;
+    font-size: 9px;
+    font-family: "Lato", sans-serif;
+    padding: 0px 5px; }
+  header .link-nav {
+    color: black;
+    text-decoration: none; }
+
+.link-nav:hover {
+  color: #00aacd; }
+
+.main-general {
+  display: grid; }
+  .main-general .texto-img-primario {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-items: center; }
+    .main-general .texto-img-primario .texto-primario {
+      font-family: "Lato", sans-serif;
+      font-size: 15px;
+      padding: 20px; }
+      .main-general .texto-img-primario .texto-primario .titulo-primario {
+        font: "Lato", sans-serif;
+        font-size: 45px;
+        color: #00aacd;
+        margin: 25px; }
+      .main-general .texto-img-primario .texto-primario .parrafo-primario {
+        font: "Lato", sans-serif;
+        text-align: center; }
+    .main-general .texto-img-primario .div-imagen-index {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main-general .texto-img-primario .div-imagen-index .imagen-principal {
+        border-radius: 32px;
+        width: 80%;
+        margin: 15px 0px; }
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 45px;
+  color: #00aacd;
+  text-align: center;
+  margin: 5px; }

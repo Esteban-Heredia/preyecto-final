@@ -1,0 +1,15 @@
+@import "variables";
+@import "header";
+@import "home";
+
+h1 {
+    font-family: $tipo;
+    font-size: 45px;
+    color: $color-principal;
+    text-align: center;
+    margin: 5px;
+}
+
+h2 {
+    color: $color-principal;
+}

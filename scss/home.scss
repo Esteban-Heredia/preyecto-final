@@ -1,0 +1,40 @@
+.main-general {
+    display: grid;
+    
+    .texto-img-primario {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-items: center;
+        
+        .texto-primario {
+            font-family: $tipo;
+            font-size: 15px;
+            padding: 20px;
+
+            .titulo-primario {
+                font: $tipo;
+                font-size: 45px;
+                color: $color-principal;
+                margin: 25px;
+            }
+
+            .parrafo-primario {
+                font: $tipo;
+                text-align: center;
+            }
+        }
+
+        .div-imagen-index {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .imagen-principal {
+                border-radius: 32px;
+                width: 80%;
+                margin: 15px 0px;
+            }
+        }
+    }
+}
