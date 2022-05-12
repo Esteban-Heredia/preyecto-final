@@ -6,7 +6,7 @@
 @import "cursos";
 @import "contacto";
 @import "media";
-@import "footer";
+@import "bootstrap";
 
 h1 {
     font-family: $tipo;
@@ -37,3 +37,10 @@ iframe {
 a {
     text-decoration: none;
 }
+
+footer {
+    background: $fondo-principal;
+}
+
+@import "breakpoint";
+@import "animaciones";

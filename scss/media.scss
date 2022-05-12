@@ -1,0 +1,15 @@
+.padre-media {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    .media {
+        padding: 10px;
+        text-decoration: none;
+
+            .icono-media {
+                height: 40px;
+                margin: 0px 10px;
+            }
+    }
+}
