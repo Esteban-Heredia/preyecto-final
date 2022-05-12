@@ -2,6 +2,8 @@
 @import "header";
 @import "home";
 @import "orientacion";
+@import "ubicacion";
+@import "cursos";
 
 h1 {
     font-family: $tipo;
@@ -13,4 +15,18 @@ h1 {
 
 h2 {
     color: $color-principal;
+}
+
+h3 {
+    text-align: center;
+    margin: 10px 5px;
+    font-size: 20px;
+    color: $color-principal;
+    font-family: $tipo;
+}
+
+iframe {
+    border: solid $color-principal 3px;
+    border-radius: 15px;
+    width: 90%;
 }
