@@ -4,6 +4,9 @@
 @import "orientacion";
 @import "ubicacion";
 @import "cursos";
+@import "contacto";
+@import "media";
+@import "footer";
 
 h1 {
     font-family: $tipo;
@@ -29,4 +32,8 @@ iframe {
     border: solid $color-principal 3px;
     border-radius: 15px;
     width: 90%;
+}
+
+a {
+    text-decoration: none;
 }
