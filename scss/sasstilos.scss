@@ -1,12 +1,5 @@
 @import "variables";
-@import "header";
-@import "home";
-@import "orientacion";
-@import "ubicacion";
-@import "cursos";
-@import "contacto";
-@import "media";
-@import "bootstrap";
+@import "breakpoint";
 
 h1 {
     font-family: $tipo;
@@ -41,6 +34,12 @@ a {
 footer {
     background: $fondo-principal;
 }
-
-@import "breakpoint";
+@import "header";
+@import "home";
+@import "orientacion";
+@import "ubicacion";
+@import "cursos";
+@import "contacto";
+@import "media";
+@import "bootstrap";
 @import "animaciones";

@@ -322,7 +322,6 @@ textarea {
 }
 
 .boton {
-    display: flex;
     align-items: center;
     padding: 10px;
     font-size: 15px;
@@ -651,8 +650,13 @@ footer {
     
     form {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-areas: "area1 area2"
+                             "boton boton";
         margin: 45px;
+    }
+
+    .boton {
+        grid-area: boton;
     }
 
     .form-primero {
