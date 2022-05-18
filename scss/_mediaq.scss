@@ -7,11 +7,6 @@
         margin: 10px;
     }
 
-    li {
-        font-size: 15px;
-        padding: 0px 5px;
-    }
-
     /* fin nav tablet */
 
     /* home tablet */
@@ -25,7 +20,7 @@
         flex-direction: row;
         justify-content: space-evenly;
     }
-    
+
     .imagen-principal {
         border-radius: 32px;
         width: 40%;
@@ -108,7 +103,7 @@
 
     /* orientacion tablet horizontal */
 
-    .texto-orientacion { 
+    .texto-orientacion {
         font-size: 20px;
         margin: 0px 35px;
     }
@@ -128,13 +123,13 @@
     /* fin cursos t/h */
 
     /* contacto t/h */
-    
-    .texto-secundario { 
+
+    .texto-secundario {
         font-size: 17px;
         margin: 0px 40px;
     }
 
-    label { 
+    label {
         font-size: 18px;
     }
 
@@ -167,7 +162,11 @@
 
 @media screen and (min-width:1024px) {
 
-    /* nav laptop */
+    /* navbar */
+
+    header {
+        flex-direction: row;
+    }
 
     .logo-base {
         height: 55px;
@@ -186,7 +185,7 @@
         grid-template-columns:  1fr 2fr;
     }
 
-    .titulo-primario { 
+    .titulo-primario {
         font-size: 35px;
         animation: titulo-primario-ani 1s both;
     }
@@ -201,15 +200,15 @@
 
     /* orientacion laptop */
 
-    .sec-gral-ori { 
+    .sec-gral-ori {
         grid-template-columns: auto;
     }
 
-    .sec-psicologa1 { 
+    .sec-psicologa1 {
         flex-direction: row;
     }
 
-    .sec-psicologa2 { 
+    .sec-psicologa2 {
         flex-direction: row;
     }
 
@@ -231,7 +230,7 @@
 
     /* ubicacion laptop */
 
-    .texto-ubicacion { 
+    .texto-ubicacion {
         font-size:  20px;
     }
 
@@ -239,7 +238,7 @@
 
     /* cursos laptop */
 
-    h3 { 
+    h3 {
         font-size: 25px;
     }
 
@@ -259,11 +258,16 @@
     /* fin de cursos */
 
     /* contacto laptop */
-    
+
     form {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-areas: "area1 area2"
+                             "boton boton";
         margin: 45px;
+    }
+
+    .boton {
+        grid-area: boton;
     }
 
     .form-primero {
@@ -275,13 +279,13 @@
     }
     /* fin contacto laptop */
 
-        /* bootstrap t/h */
+    /* bootstrap t/h */
 
-        .w-50 {
-            width: 50%!important;
-        }
-    
-        /* fin bootstrap t/h */
+    .w-50 {
+        width: 50%!important;
+    }
+
+    /* fin bootstrap t/h */
 }
 
 @media screen and (min-width:1440px) {
@@ -298,7 +302,7 @@
         padding: 10px 15px;
     }
 
-    .titulo-primario { 
+    .titulo-primario {
         font-size: 62px;
     }
 
@@ -346,7 +350,7 @@
         font-size: 35px;
         padding: 20px 70px 0px 70px;
     }
-    
+
     /* fin orientacion desktop */
 
     /* ubicacion desktop */
@@ -366,7 +370,7 @@
         width: 90%;
         height: 130%;
     }
-    
+
     /* fin ubicacion desktop */
 
     /* cursos desktop */
@@ -378,7 +382,7 @@
     .cursos-principal {
         column-gap: 80px;
         margin: 20px;
-    }    
+    }
 
     .texto-cursos1, .texto-cursos2, .texto-cursos3 {
         font-size: 30px;
