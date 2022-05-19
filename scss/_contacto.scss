@@ -10,39 +10,43 @@
     flex-direction: column;
     align-items: center;
 
-    form {
-        text-align: center;
-        margin: 5px;
-
-        label {
-            font-family: $tipo;
-            font-size: 12px;
-        }
     
-        input {
-            background-color: $color-secundario !important;
-            border-radius: 15px !important;
-            margin: 10px !important;
-            padding: 5px !important;
-            text-align: center !important;
-            font-family: $tipo !important;
-        }
+}
 
-        textarea {
-            width: 80%;
-            height: 150px;
-            margin: 15px;
-            border: solid $color-secundario 3px;
-            border-radius: 15px;
-            font-size: 12px;
-            font-family: $tipo;
-        }
-    }
+form {
+    text-align: center;
+    margin: 5px;
 
-    .boton {
-        align-items: center;
-        padding: 10px;
-        font-size: 15px;
-        font-family: $tipo;
-    }
+   
+}
+
+.boton {
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+    font-family: $tipo;
+}
+
+label {
+    font-family: $tipo;
+    font-size: 12px;
+}
+
+input {
+    background-color: $color-secundario !important;
+    border-radius: 15px !important;
+    margin: 10px !important;
+    padding: 5px !important;
+    text-align: center !important;
+    font-family: $tipo !important;
+}
+
+textarea {
+    width: 80%;
+    height: 150px;
+    margin: 15px;
+    border: solid $color-secundario 3px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-family: $tipo;
 }

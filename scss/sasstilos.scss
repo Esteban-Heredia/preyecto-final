@@ -6,40 +6,12 @@
 @import "cursos";
 @import "contacto";
 @import "media";
+@import "etiquetaprincipales";
 @import "bootstrap";
 @import "animaciones";
-@import "mediaq";
-
-h1 {
-    font-family: $tipo;
-    font-size: 45px;
-    color: $color-principal;
-    text-align: center;
-    margin: 5px;
-}
-
-h2 {
-    color: $color-principal;
-}
-
-h3 {
-    text-align: center;
-    margin: 10px 5px;
-    font-size: 20px;
-    color: $color-principal;
-    font-family: $tipo;
-}
-
-iframe {
-    border: solid $color-principal 3px;
-    border-radius: 15px;
-    width: 90%;
-}
-
-a {
-    text-decoration: none;
-}
-
-footer {
-    background: $fondo-principal;
-}
+@import "mediaq600";
+@import "mediaq768";
+@import "mediaq1024";
+@import "mediaq1440";
+@import "mapas";
+@import "eym";

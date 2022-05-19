@@ -1,0 +1,33 @@
+h1 {
+    font-family: $tipo;
+    font-size: 45px;
+    color: $color-principal;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+h2 {
+    color: $color-principal;
+}
+
+h3 {
+    text-align: center;
+    margin: 30px 5px;
+    font-size: 20px;
+    color: $color-principal;
+    font-family: $tipo;
+}
+
+iframe {
+    border: solid $color-principal 3px;
+    border-radius: 15px;
+    width: 90%;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    background: $fondo-principal;
+}

@@ -1,9 +1,9 @@
 header {
   display: flex;
+  align-items: center;
   flex-direction: column;
   background: #63e4ff linear-gradient(34deg, #63e4ff 0%, #b2fbee 65%, #95ffef 100%);
-  justify-content: space-between;
-  align-items: center; }
+  justify-content: space-between; }
   header .logo-base {
     height: 50px;
     margin: 10px 0px 0px 50px; }
@@ -18,8 +18,8 @@ header {
 
 .div-imagen-index {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
 
 .texto-primario {
   font-family: 'Lato', sans-serif;
@@ -78,9 +78,9 @@ table {
       padding: 0px 30px; }
     table thead th {
       font-family: "Lato", sans-serif;
-      padding: 10px 10px; }
+      padding: 10px 24px; }
   table td {
-    padding: 0px 30px; }
+    padding: 0px 10px; }
 
 .texto-secundario {
   text-align: center;
@@ -92,32 +92,37 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .form-gral form {
-    text-align: center;
-    margin: 5px; }
-    .form-gral form label {
-      font-family: "Lato", sans-serif;
-      font-size: 12px; }
-    .form-gral form input {
-      background-color: #b2fbee !important;
-      border-radius: 15px !important;
-      margin: 10px !important;
-      padding: 5px !important;
-      text-align: center !important;
-      font-family: "Lato", sans-serif !important; }
-    .form-gral form textarea {
-      width: 80%;
-      height: 150px;
-      margin: 15px;
-      border: solid #b2fbee 3px;
-      border-radius: 15px;
-      font-size: 12px;
-      font-family: "Lato", sans-serif; }
-  .form-gral .boton {
-    align-items: center;
-    padding: 10px;
-    font-size: 15px;
-    font-family: "Lato", sans-serif; }
+
+form {
+  text-align: center;
+  margin: 5px; }
+
+.boton {
+  align-items: center;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Lato", sans-serif; }
+
+label {
+  font-family: "Lato", sans-serif;
+  font-size: 12px; }
+
+input {
+  background-color: #b2fbee !important;
+  border-radius: 15px !important;
+  margin: 10px !important;
+  padding: 5px !important;
+  text-align: center !important;
+  font-family: "Lato", sans-serif !important; }
+
+textarea {
+  width: 80%;
+  height: 150px;
+  margin: 15px;
+  border: solid #b2fbee 3px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-family: "Lato", sans-serif; }
 
 .padre-media {
   display: flex;
@@ -129,6 +134,34 @@ table {
     .padre-media .media .icono-media {
       height: 40px;
       margin: 0px 10px; }
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 45px;
+  color: #00aacd;
+  text-align: center;
+  margin: 30px 0px; }
+
+h2 {
+  color: #00aacd; }
+
+h3 {
+  text-align: center;
+  margin: 30px 5px;
+  font-size: 20px;
+  color: #00aacd;
+  font-family: "Lato", sans-serif; }
+
+iframe {
+  border: solid #00aacd 3px;
+  border-radius: 15px;
+  width: 90%; }
+
+a {
+  text-decoration: none; }
+
+footer {
+  background: #63e4ff linear-gradient(34deg, #63e4ff 0%, #b2fbee 65%, #95ffef 100%); }
 
 .row {
   --bs-gutter-x: 0rem;
@@ -411,30 +444,15 @@ table {
     font-size: 25px; }
   /* fin footer desktop */ }
 
-h1 {
-  font-family: "Lato", sans-serif;
-  font-size: 45px;
-  color: #00aacd;
-  text-align: center;
-  margin: 5px; }
+.red-articulo1 {
+  size: 40px; }
 
-h2 {
-  color: #00aacd; }
+.red-articulo2 {
+  size: 25px; }
 
-h3 {
-  text-align: center;
-  margin: 10px 5px;
-  font-size: 20px;
-  color: #00aacd;
-  font-family: "Lato", sans-serif; }
+.red-articulo3 {
+  size: 18px; }
 
-iframe {
-  border: solid #00aacd 3px;
+.border-margintop {
   border-radius: 15px;
-  width: 90%; }
-
-a {
-  text-decoration: none; }
-
-footer {
-  background: #63e4ff linear-gradient(34deg, #63e4ff 0%, #b2fbee 65%, #95ffef 100%); }
+  margin-top: 15px; }

@@ -1,0 +1,74 @@
+@media screen and (min-width:768px) {
+
+    /* nav tablet horizontal */
+
+    .logo-base {
+        height: 50px;
+        margin: 10px;
+    }
+
+    li {
+        font-size: 20px;
+        padding: 0px 5px;
+    }
+
+    /* fin nav t/h */
+
+    /* orientacion tablet horizontal */
+
+    .texto-orientacion {
+        font-size: 20px;
+        margin: 0px 35px;
+    }
+
+    /* fin orientacion t/h  */
+
+    /* cursos tablet horizontal */
+
+    .texto-cursos1, .texto-cursos2, .texto-cursos3 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    /* fin cursos t/h */
+
+    /* contacto t/h */
+
+    .texto-secundario {
+        font-size: 17px;
+        margin: 0px 40px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    .texto-form {
+        font-size: 18px;
+    }
+
+    textarea {
+        font-size: 16px;
+    }
+
+    /* fin contacto t/h */
+
+    /* bootstrap t/h */
+
+    .row {
+        flex-direction: row;
+    }
+
+    .w-50 {
+        width: 85%!important;
+    }
+
+    .d-flex {
+        flex-direction: row;
+        align-items: unset;
+    }
+    /* fin bootstrap t/h */
+}

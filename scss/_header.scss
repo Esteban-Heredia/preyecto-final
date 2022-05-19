@@ -1,9 +1,9 @@
 header {
     display: flex;
+    align-items: center;
     flex-direction: column;
     background: $fondo-principal;
     justify-content: space-between;
-    align-items: center;
 
     .logo-base {
         height: 50px;

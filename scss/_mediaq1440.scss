@@ -1,0 +1,128 @@
+@media screen and (min-width:1440px) {
+
+    /* home desktop */
+
+    .logo-base {
+        height: 70px;
+        margin: 15px 70px;
+    }
+
+    li {
+        font-size: 30px;
+        padding: 10px 15px;
+    }
+
+    .titulo-primario {
+        font-size: 62px;
+    }
+
+    .texto-img-primario {
+        justify-items: normal;
+    }
+
+    .parrafo-primario {
+        font-size: 32px;
+    }
+
+    .imagen-principal {
+        width: 35%;
+    }
+
+    /* fin home desktop */
+
+    /* media desktop */
+
+    .icono-media {
+        height: 70px;
+        margin: 20px
+    }
+
+    /* fin media desktop */
+
+    /* orientacion desktop */
+
+    .titulo-orientacion {
+        margin: 30px;
+        font-size: 75px;
+    }
+
+    .texto-orientacion {
+        font-size: 33px;
+        margin: 15px 50px;
+    }
+
+    .nombres {
+        font-size: 55px;
+        margin: 20px;
+    }
+
+    .texto-presentacion {
+        font-size: 35px;
+        padding: 20px 70px 0px 70px;
+    }
+
+    /* fin orientacion desktop */
+
+    /* ubicacion desktop */
+
+    .oficina-psico {
+        border-radius: 15px;
+        width: 80%;
+        margin: 0;
+    }
+
+    .texto-ubicacion {
+        font-size: 32px;
+        margin: 20px;
+    }
+
+    iframe {
+        width: 90%;
+        height: 130%;
+    }
+
+    /* fin ubicacion desktop */
+
+    /* cursos desktop */
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .cursos-principal {
+        column-gap: 80px;
+        margin: 20px;
+    }
+
+    .texto-cursos1, .texto-cursos2, .texto-cursos3 {
+        font-size: 30px;
+    }
+
+    .img-cursos {
+        width: 90%;
+        margin: 30px 0px;
+    }
+
+    table {
+        font-size: 45px;
+        border-spacing: 25px;
+    }
+
+    .libre {
+        padding: 0px 90px 0px 130px;
+    }
+
+    /* fin cursos desktop */
+
+    /* footer desktop */
+
+    .legales {
+        font-size: 25px;
+    }
+
+    .faq {
+        font-size: 25px;
+    }
+
+    /* fin footer desktop */
+}

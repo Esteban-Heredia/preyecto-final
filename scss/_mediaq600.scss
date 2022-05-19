@@ -1,0 +1,85 @@
+@media screen and (min-width:600px){
+
+    /* nav tablet */
+
+    .logo-base {
+        height: 35px;
+        margin: 10px;
+    }
+
+    /* fin nav tablet */
+
+    /* home tablet */
+
+    .parrafo-primario {
+        font-size: 20px;
+    }
+
+    .div-imagen-index {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .imagen-principal {
+        border-radius: 32px;
+        width: 40%;
+        }
+
+    /* fin home tablet */
+
+    /* orientacion tablet */
+
+    .titulo-orientacion {
+        margin: 20px;
+    }
+
+    .sec-gral-ori {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .sec-psicologa1 {
+        justify-content: space-between;
+    }
+
+    .psicologas1 {
+        @extend.border-margintop;
+        width: 35%;
+    }
+
+    .psicologas2 {
+        @extend .border-margintop;
+        width: 35%;
+        
+    }
+
+    /* fin orientacion */
+
+    /* cursos tablet */
+
+    .cursos-principal {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: end;
+        column-gap: 10px;
+    }
+
+    .texto-cursos1, .texto-cursos2, .texto-cursos3 {
+        font-size: 13px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    /* fin cursos tablet */
+
+    /* bootstrap tablet */
+
+    .w-50 {
+        width: 30%!important;
+    }
+
+    /* fin de bootstrap tablet */
+}

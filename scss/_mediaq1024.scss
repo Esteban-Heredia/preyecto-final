@@ -1,0 +1,127 @@
+@media screen and (min-width:1024px) {
+
+    /* navbar */
+
+    header {
+        flex-direction: row;
+    }
+
+    .logo-base {
+        height: 55px;
+        margin: 10px 50px;
+    }
+
+    li {
+        font-size: 23px;
+    }
+
+    /* fin nav laptop */
+
+    /* home laptop */
+
+    .texto-img-primario {
+        grid-template-columns:  1fr 2fr;
+    }
+
+    .titulo-primario {
+        font-size: 35px;
+        animation: titulo-primario-ani 1s both;
+    }
+
+    .imagen-principal {
+        width: 40%;
+        margin-top: 30px;
+        animation: sombra-img 0.8s both;
+    }
+
+    /* fin home laptop */
+
+    /* orientacion laptop */
+
+    .sec-gral-ori {
+        grid-template-columns: auto;
+    }
+
+    .sec-psicologa1 {
+        flex-direction: row;
+    }
+
+    .sec-psicologa2 {
+        flex-direction: row;
+    }
+
+    .psicologas1 {
+        width: 27%;
+        /* margin-right: 90px; se produce un error con bootstrap */
+        margin-bottom: 30px;
+        animation: entrada-dai 0.5s both;
+    }
+
+    .psicologas2 {
+        width: 27%;
+        /* margin-left: 90px; se produce un error con bootstrap */
+        margin-bottom: 60px;
+        animation: entrada-iad 0.5s both;
+    }
+
+    /* fin orientacion laptop */
+
+    /* ubicacion laptop */
+
+    .texto-ubicacion {
+        font-size:  20px;
+    }
+
+    /* fin ubicacion laptop */
+
+    /* cursos laptop */
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .cursos-principal {
+        column-gap: 45px;
+        margin: 30px;
+    }
+
+    .texto-cursos1, .texto-cursos2, .texto-cursos3 {
+        font-size: 16px;
+    }
+
+    table {
+        font-size: 25px;
+    }
+
+    /* fin de cursos */
+
+    /* contacto laptop */
+
+    form {
+        display: grid;
+        grid-template-areas: "area1 area2"
+                             "boton boton";
+        margin: 45px;
+    }
+
+    .boton {
+        grid-area: boton;
+    }
+
+    .form-primero {
+        margin: 0px 45px;
+    }
+
+    .form-segundo {
+        margin: 0px 45px;
+    }
+    /* fin contacto laptop */
+
+    /* bootstrap t/h */
+
+    .w-50 {
+        width: 50%!important;
+    }
+
+    /* fin bootstrap t/h */
+}

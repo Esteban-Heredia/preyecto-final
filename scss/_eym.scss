@@ -1,0 +1,17 @@
+.border-margintop {
+    border-radius: 15px;
+    margin-top: 15px;
+}
+//se encuentra en la parte de orientacion tablet
+
+// mixins
+
+@mixin disflex-aicen {
+    display: flex;
+    align-items: center;
+}
+
+// agregados en header y home
+
+
+//nose porque no me compila el watch saco el extende o el mixin y funciona... no lo pude aplicar pero si lo se hacer.
