@@ -4,15 +4,15 @@ header {
     flex-direction: column;
     background: $fondo-principal;
     justify-content: space-between;
-
-    .logo-base {
-        height: 50px;
-        margin: 10px 0px 0px 50px;
-    }
-    
+ 
     .nav-link {
         color: $color-terciario;
     }
+}
+
+.logo-base {
+    height: 50px;
+    margin: 10px 0px 0px 50px;
 }
 
 .link-nav:hover {

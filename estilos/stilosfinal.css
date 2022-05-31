@@ -4,11 +4,12 @@ header {
   flex-direction: column;
   background: #63e4ff linear-gradient(34deg, #63e4ff 0%, #b2fbee 65%, #95ffef 100%);
   justify-content: space-between; }
-  header .logo-base {
-    height: 50px;
-    margin: 10px 0px 0px 50px; }
   header .nav-link {
     color: #00748b; }
+
+.logo-base {
+  height: 50px;
+  margin: 10px 0px 0px 50px; }
 
 .link-nav:hover {
   color: #00aacd; }
@@ -50,6 +51,9 @@ header {
   color: #00aacd;
   margin: 25px; }
 
+.desaparezco1, .desaparezco2, .desaparezco3 {
+  text-align: center; }
+
 .psicologas1, .psicologas2 {
   border-radius: 15px;
   margin: 10px 10px;
@@ -59,6 +63,9 @@ header {
   display: grid;
   justify-items: center;
   padding: 10px; }
+
+.text-ubi {
+  margin: 0px 25px; }
 
 .tabla {
   display: flex;
@@ -155,10 +162,22 @@ h3 {
 iframe {
   border: solid #00aacd 3px;
   border-radius: 15px;
-  width: 90%; }
+  width: 90%;
+  margin-top: 20px; }
+
+input {
+  border: none !important; }
 
 a {
   text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+.f-li-a:hover {
+  background-color: #00fbff2d;
+  padding: 10px;
+  border-radius: 20px; }
 
 footer {
   background: #63e4ff linear-gradient(34deg, #63e4ff 0%, #b2fbee 65%, #95ffef 100%); }
@@ -177,43 +196,10 @@ footer {
 .form-label {
   margin-bottom: 0; }
 
-@keyframes sombra-img {
-  0% {
-    transform: translateZ(0);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0); }
-  100% {
-    transform: translateZ(50px);
-    box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.55), 0 12px 20px -12px rgba(0, 0, 0, 0.55); } }
-
-@keyframes entrada-dai {
-  0% {
-    transform: translateX(1000px);
-    opacity: 0; }
-  100% {
-    transform: translateX(0);
-    opacity: 1; } }
-
-@keyframes entrada-iad {
-  0% {
-    transform: translateX(-1000px);
-    opacity: 0; }
-  100% {
-    transform: translateX(0);
-    opacity: 1; } }
-
-@keyframes titulo-primario-ani {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0; }
-  40% {
-    opacity: 0.6; }
-  100% {
-    opacity: 1; } }
-
 @media screen and (min-width: 600px) {
   /* nav tablet */
   .logo-base {
-    height: 35px;
+    height: 55px;
     margin: 10px; }
   /* fin nav tablet */
   /* home tablet */
@@ -235,15 +221,24 @@ footer {
     grid-template-columns: auto auto; }
   .sec-psicologa1 {
     justify-content: space-between; }
+  .border-margintop, .psicologas1, .psicologas2 {
+    border-radius: 15px;
+    margin-top: 10px; }
   .psicologas1 {
-    width: 35%;
-    border-radius: 15px;
-    margin-top: 15px; }
+    width: 35%; }
   .psicologas2 {
-    width: 35%;
-    border-radius: 15px;
-    margin-top: 15px; }
+    width: 35%; }
   /* fin orientacion */
+  /* ubicacion tablet */
+  .text-ubi {
+    margin: 0px 45px; }
+  iframe {
+    margin-top: 40px; }
+  /* fin ubicacion */
+  /* media tablet */
+  .padre-media {
+    margin-top: 45px; }
+  /* fin media */
   /* cursos tablet */
   .cursos-principal {
     display: grid;
@@ -280,6 +275,10 @@ footer {
   h3 {
     font-size: 20px; }
   /* fin cursos t/h */
+  /* ubicacion t/h */
+  iframe {
+    margin-top: 80px; }
+  /* fin ubicacion */
   /* contacto t/h */
   .texto-secundario {
     font-size: 17px;
@@ -309,7 +308,7 @@ footer {
     height: 55px;
     margin: 10px 50px; }
   li {
-    font-size: 23px; }
+    font-size: 10px; }
   /* fin nav laptop */
   /* home laptop */
   .texto-img-primario {
@@ -321,6 +320,27 @@ footer {
     width: 40%;
     margin-top: 30px;
     animation: sombra-img 0.8s both; }
+  .desaparezco1 {
+    position: relative;
+    animation-name: desaparecer;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
+  .desaparezco2 {
+    position: relative;
+    animation-name: desaparecer;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
+  .desaparezco3 {
+    position: relative;
+    animation-name: desaparecer;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
   /* fin home laptop */
   /* orientacion laptop */
   .sec-gral-ori {
@@ -331,18 +351,18 @@ footer {
     flex-direction: row; }
   .psicologas1 {
     width: 27%;
-    /* margin-right: 90px; se produce un error con bootstrap */
     margin-bottom: 30px;
     animation: entrada-dai 0.5s both; }
   .psicologas2 {
     width: 27%;
-    /* margin-left: 90px; se produce un error con bootstrap */
     margin-bottom: 60px;
     animation: entrada-iad 0.5s both; }
   /* fin orientacion laptop */
   /* ubicacion laptop */
   .texto-ubicacion {
     font-size: 20px; }
+  .text-ubi {
+    margin: 0px 115px; }
   /* fin ubicacion laptop */
   /* cursos laptop */
   h3 {
@@ -378,8 +398,8 @@ footer {
     height: 70px;
     margin: 15px 70px; }
   li {
-    font-size: 30px;
-    padding: 10px 15px; }
+    font-size: 10px;
+    padding: 10px 0px; }
   .titulo-primario {
     font-size: 62px; }
   .texto-img-primario {
@@ -418,7 +438,7 @@ footer {
     margin: 20px; }
   iframe {
     width: 90%;
-    height: 130%; }
+    height: 100%; }
   /* fin ubicacion desktop */
   /* cursos desktop */
   h3 {
@@ -444,6 +464,50 @@ footer {
     font-size: 25px; }
   /* fin footer desktop */ }
 
+@keyframes desaparecer {
+  0% {
+    transform: translateX(0px);
+    opacity: 1; }
+  75% {
+    transform: translateX(50px);
+    opacity: 0; }
+  100% {
+    transform: translateX(100px);
+    opacity: 0; } }
+
+@keyframes sombra-img {
+  0% {
+    transform: translateZ(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0); }
+  100% {
+    transform: translateZ(50px);
+    box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.55), 0 12px 20px -12px rgba(0, 0, 0, 0.55); } }
+
+@keyframes entrada-dai {
+  0% {
+    transform: translateX(70px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes entrada-iad {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes titulo-primario-ani {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
 .red-articulo1 {
   size: 40px; }
 
@@ -452,7 +516,3 @@ footer {
 
 .red-articulo3 {
   size: 18px; }
-
-.border-margintop {
-  border-radius: 15px;
-  margin-top: 15px; }

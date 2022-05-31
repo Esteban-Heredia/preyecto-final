@@ -12,7 +12,7 @@
     }
 
     li {
-        font-size: 23px;
+        font-size: 10px;
     }
 
     /* fin nav laptop */
@@ -34,6 +34,33 @@
         animation: sombra-img 0.8s both;
     }
 
+    .desaparezco1 {
+        position: relative;
+        animation-name: desaparecer;
+        animation-duration: 2.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    .desaparezco2 {
+        position: relative;
+        animation-name: desaparecer;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    .desaparezco3 {
+        position: relative;
+        animation-name: desaparecer;
+        animation-duration: 6s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
     /* fin home laptop */
 
     /* orientacion laptop */
@@ -52,14 +79,12 @@
 
     .psicologas1 {
         width: 27%;
-        /* margin-right: 90px; se produce un error con bootstrap */
         margin-bottom: 30px;
         animation: entrada-dai 0.5s both;
     }
 
     .psicologas2 {
         width: 27%;
-        /* margin-left: 90px; se produce un error con bootstrap */
         margin-bottom: 60px;
         animation: entrada-iad 0.5s both;
     }
@@ -70,6 +95,10 @@
 
     .texto-ubicacion {
         font-size:  20px;
+    }
+
+    .text-ubi {
+        margin: 0px 115px;
     }
 
     /* fin ubicacion laptop */

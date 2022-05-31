@@ -3,7 +3,7 @@
     /* nav tablet */
 
     .logo-base {
-        height: 35px;
+        height: 55px;
         margin: 10px;
     }
 
@@ -43,8 +43,15 @@
         justify-content: space-between;
     }
 
+    // extend
+    
+    .border-margintop {
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
     .psicologas1 {
-        @extend.border-margintop;
+        @extend .border-margintop;
         width: 35%;
     }
 
@@ -55,6 +62,26 @@
     }
 
     /* fin orientacion */
+
+    /* ubicacion tablet */
+
+    .text-ubi {
+        margin: 0px 45px;
+    }
+
+    iframe {
+        margin-top: 40px;
+    }
+
+    /* fin ubicacion */
+
+    /* media tablet */
+
+    .padre-media {
+        margin-top: 45px;
+    }
+
+    /* fin media */
 
     /* cursos tablet */
 

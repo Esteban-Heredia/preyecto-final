@@ -22,10 +22,24 @@ iframe {
     border: solid $color-principal 3px;
     border-radius: 15px;
     width: 90%;
+    margin-top: 20px;
 }
 
+input {
+    border: none !important;
+}
 a {
     text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.f-li-a:hover {
+    background-color: #00fbff2d;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 footer {
