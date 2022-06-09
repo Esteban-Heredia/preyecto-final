@@ -69,27 +69,32 @@
             </div>
         </section>
         
-        <section class="form-gral">
+        <section class="form-gral m-5">
             <form action="">
                 <div class="form-primero">
+                      <div>
                         <label for="nombre">Por favor ingresá tu:</label>
-                        <input type="text" placeholder="Nombre">
-                        <br>
+                        <input class="text-center p-2 m-2 rounded-pill" type="text" placeholder="Nombre">
+                      </div>
+                      <div>
                         <label for="apellido">Por favor ingresá tu:</label>
-                        <input type="text" placeholder="Apellido">
-                        <br>
+                        <input class="text-center p-2 m-2 rounded-pill" type="text" placeholder="Apellido">
+                      </div>
+                      <div>
                         <label for="apellido">Por favor ingresá tu:</label>
-                        <input type="text" placeholder="Localidad">
-                        <br>
+                        <input class="text-center p-2 m-2 rounded-pill" type="text" placeholder="Localidad">
+                      </div>
+                      <div>
                         <label for="email">Por favor ingresá tu:</label>
-                        <input type="email" placeholder="Email">
-                        <br>
+                        <input class="text-center p-2 m-2 rounded-pill" type="email" placeholder="Email">
+                      </div>
+                      <div>
                         <label for="telefono">Por favor ingresá tu:</label>
-                        <input type="tel" placeholder="Teléfono">
-                        <br>
-                        <div class="d-flex flex-row align-items-center justify-content-center">
+                        <input class="text-center p-2 m-2 rounded-pill" type="tel" placeholder="Teléfono">
+                      </div>
+                        <div class="d-flex flex-row align-items-center justify-content-between">
                             <label for="posee-obra-social" class="form-label">Posee obra social?</label>
-                            <input class="form-control" list="datalistOptions" id="posee-obra-social" placeholder="...">
+                            <input class="form-control text-center p-2 m-2 rounded-pill" list="datalistOptions" id="posee-obra-social" placeholder="...">
                             <datalist id="datalistOptions">
                             <option value="Si">
                             <option value="No">
@@ -98,9 +103,9 @@
                     </div>
                     
                     <div class="form-segundo">
-                        <div class="d-flex flex-row align-items-center justify-content-center">
+                        <div class="d-flex flex-row align-items-center justify-content-between">
                             <label for="que-obra-social" class="form-label">Que obra social posee:</label>
-                            <input class="form-control" list="datalistOptions1" id="que-obra-social" placeholder="Obra social">
+                            <input class="form-control text-center p-2 m-2 rounded-pill" list="datalistOptions1" id="que-obra-social" placeholder="Obra social">
                             <datalist id="datalistOptions1">
                             <option value="Obra social 1">
                             <option value="Obra social 2">
@@ -109,36 +114,33 @@
                             <option value="Obra social 5">
                             </datalist>
                         </div>
-                        <br>
                         <div class="d-flex flex-row align-items-center justify-content-center">
                             <label for="terapia-si-no" class="form-label">Alguna vez realizaste terapia?</label>
-                            <input class="form-control" list="datalistOptions2" id="terapia-si-no" placeholder="...">
+                            <input class="form-control text-center p-2 m-2 rounded-pill" list="datalistOptions2" id="terapia-si-no" placeholder="...">
                             <datalist id="datalistOptions2">
                             <option value="Si">
                             <option value="No">
                             </datalist>
                         </div>
-                        <br>
                         <div class="d-flex flex-row align-items-center justify-content-center">
                             <label for="tipo-terapia" class="form-label">Que tipo de terapia preferís?</label>
-                            <input class="form-control" list="datalistOptions3" id="tipo-terapia" placeholder="...">
+                            <input class="form-control text-center p-2 m-2 rounded-pill" list="datalistOptions3" id="tipo-terapia" placeholder="...">
                             <datalist id="datalistOptions3">
                             <option value="virtual">
                             <option value="Presencial">
                             </datalist>
                         </div>
-                        <br>
-                        <label for="asunto">¿Cuál es tu motivo de consulta?</label>
-                        <br>
-                        <textarea name="" id=""></textarea>
+                        <div class="mt-3">
+                          <label for="asunto">¿Cuál es tu motivo de consulta?</label>
+                          <textarea name="" id=""></textarea>
+                        </div>
                     </div>
                     <div class="boton">
                         <input class="boton p-3" type="submit" value="Enviar">
                     </div>
             </form>
         </section>
-    <br>
-        <section class="padre-media">
+        <section class="padre-media mb-5">
             <div class="media">
                 <a href="https://www.facebook.com/" target="_blank">
                     <img class="icono-media" src="../iconos/logotipo-facebook.png" alt="facebook">
@@ -157,19 +159,17 @@
                 <img class="w-50" src="../iconos/logo-base-horizontal.png" alt="logo-cms">
             </div>
             <div class="col">
-                <h6 class="fs-5 text-muted">Legales</h6>
-                <br>
+                <h6 class="fs-5 text-muted mb-5">Legales</h6>
                 <p class="text-muted">Copyright© 2022 - Autor Esteban Heredia</p>
             </div>
             <div class="col">
-                <h6 class="fs-5 text-muted">Medios de contacto</h6>
-                <br>
+                <h6 class="fs-5 text-muted mb-4">Medios de contacto</h6>
                 <ul>
                   <li>
-                    <a class="f-li-a text-muted fs-6" href="https://www.instagram.com/">Instagram</a>
+                    <a class="f-li-a text-muted fs-6" href="https://www.instagram.com/" target="_blank">Instagram</a>
                   </li>
                   <li>
-                    <a class="f-li-a text-muted fs-6" href="https://www.facebook.com/">facebook</a>
+                    <a class="f-li-a text-muted fs-6" href="https://www.facebook.com/" target="_blank">facebook</a>
                   </li>
                   <li>
                     <a class="f-li-a text-muted fs-6" href="contacto.html">Contacto</a>
@@ -177,8 +177,7 @@
                 </ul>
             </div>
             <div class="col">
-                <h6 class="fs-5 text-muted">Preguntas frecuentes</h6>
-                <br>
+                <h6 class="fs-5 text-muted mb-4">Preguntas frecuentes</h6>
                 <ul>
                   <li>
                     <a class="f-li-a text-muted fs-6" href="orientacion.html">¿Orientacion psicologica?</a>

@@ -43,6 +43,32 @@
     margin: 25px;
 }
 
-.desaparezco1, .desaparezco2, .desaparezco3 {
+.desaparezco1 {
+    position: relative;
+    animation-name: desaparecer;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-align: center;
+}
+
+.desaparezco2 {
+    position: relative;
+    animation-name: desaparecer;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-align: center;
+}
+
+.desaparezco3 {
+    position: relative;
+    animation-name: desaparecer;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     text-align: center;
 }

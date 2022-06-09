@@ -51,7 +51,31 @@ header {
   color: #00aacd;
   margin: 25px; }
 
-.desaparezco1, .desaparezco2, .desaparezco3 {
+.desaparezco1 {
+  position: relative;
+  animation-name: desaparecer;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  text-align: center; }
+
+.desaparezco2 {
+  position: relative;
+  animation-name: desaparecer;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  text-align: center; }
+
+.desaparezco3 {
+  position: relative;
+  animation-name: desaparecer;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
   text-align: center; }
 
 .psicologas1, .psicologas2 {
@@ -79,8 +103,7 @@ table {
   border-spacing: 5px; }
   table thead {
     background-color: #b2fbee;
-    border-radius: 15px;
-    padding: 0px 25px; }
+    border-radius: 15px; }
     table thead .libre {
       padding: 0px 30px; }
     table thead th {
@@ -108,6 +131,7 @@ form {
   align-items: center;
   padding: 10px;
   font-size: 15px;
+  border-radius: 10px;
   font-family: "Lato", sans-serif; }
 
 label {
@@ -116,10 +140,6 @@ label {
 
 input {
   background-color: #b2fbee !important;
-  border-radius: 15px !important;
-  margin: 10px !important;
-  padding: 5px !important;
-  text-align: center !important;
   font-family: "Lato", sans-serif !important; }
 
 textarea {
@@ -195,6 +215,50 @@ footer {
 
 .form-label {
   margin-bottom: 0; }
+
+@keyframes desaparecer {
+  0% {
+    transform: translateX(0px);
+    opacity: 1; }
+  75% {
+    transform: translateX(10px);
+    opacity: 0; }
+  100% {
+    transform: translateX(50px);
+    opacity: 0; } }
+
+@keyframes sombra-img {
+  0% {
+    transform: translateZ(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0); }
+  100% {
+    transform: translateZ(50px);
+    box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.55), 0 12px 20px -12px rgba(0, 0, 0, 0.55); } }
+
+@keyframes entrada-dai {
+  0% {
+    transform: translateX(70px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes entrada-iad {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes titulo-primario-ani {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
 
 @media screen and (min-width: 600px) {
   /* nav tablet */
@@ -320,27 +384,6 @@ footer {
     width: 40%;
     margin-top: 30px;
     animation: sombra-img 0.8s both; }
-  .desaparezco1 {
-    position: relative;
-    animation-name: desaparecer;
-    animation-duration: 2.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate; }
-  .desaparezco2 {
-    position: relative;
-    animation-name: desaparecer;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate; }
-  .desaparezco3 {
-    position: relative;
-    animation-name: desaparecer;
-    animation-duration: 6s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate; }
   /* fin home laptop */
   /* orientacion laptop */
   .sec-gral-ori {
@@ -463,56 +506,3 @@ footer {
   .faq {
     font-size: 25px; }
   /* fin footer desktop */ }
-
-@keyframes desaparecer {
-  0% {
-    transform: translateX(0px);
-    opacity: 1; }
-  75% {
-    transform: translateX(50px);
-    opacity: 0; }
-  100% {
-    transform: translateX(100px);
-    opacity: 0; } }
-
-@keyframes sombra-img {
-  0% {
-    transform: translateZ(0);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0); }
-  100% {
-    transform: translateZ(50px);
-    box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.55), 0 12px 20px -12px rgba(0, 0, 0, 0.55); } }
-
-@keyframes entrada-dai {
-  0% {
-    transform: translateX(70px);
-    opacity: 0; }
-  100% {
-    transform: translateX(0);
-    opacity: 1; } }
-
-@keyframes entrada-iad {
-  0% {
-    transform: translateX(-200px);
-    opacity: 0; }
-  100% {
-    transform: translateX(0);
-    opacity: 1; } }
-
-@keyframes titulo-primario-ani {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0; }
-  40% {
-    opacity: 0.6; }
-  100% {
-    opacity: 1; } }
-
-.red-articulo1 {
-  size: 40px; }
-
-.red-articulo2 {
-  size: 25px; }
-
-.red-articulo3 {
-  size: 18px; }
